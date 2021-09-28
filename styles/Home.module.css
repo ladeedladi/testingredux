@@ -1,0 +1,17 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+
+.users{
+  background-color: rgb(157, 157, 218);
+  width: 100%;
+  margin :3px;
+  cursor: pointer;
+}
