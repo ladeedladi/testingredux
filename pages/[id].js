@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import styles from "../styles/id.module.css"
 const Id = ({data}) => {
-    console.log(data);
+    
     return (
         <div className={styles.user}>
             <h1>userID: {data.userId}</h1>
@@ -27,6 +27,7 @@ export default Id
 // }
 
 export const getStaticProps=async({params})=>{
+
 
     const {data}=await axios.get(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
     console.log(data);

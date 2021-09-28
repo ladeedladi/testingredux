@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import axios from "axios"
 import Link from "next/link"
+import { useSelector } from 'react-redux'
 export default function Home({data}) {
 
 
@@ -24,7 +25,7 @@ export default function Home({data}) {
 export const getStaticProps=async()=>{
 
   const {data}=await axios.get("https://jsonplaceholder.typicode.com/posts")
-  console.log(data);
+ 
   return{
     props:{
        data
